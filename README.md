@@ -81,17 +81,10 @@ Aquí deberías ver que tenemos
 
 ![verificacion sharding](../images/sharding/sh-status.gif)
 
-## Arquitectura del esquema de sharding
-
-Podemos ver la arquitectura resultante (gracias al usuario `minhhungit` por la imagen):
-
-![Arquitectura de sharding](../images/sharding/sharding-handson-architecture.png)
 
 ## Insertando un set de datos
 
 Nos conectaremos a continuación a alguna de las instancias del router, por ejemplo a `router-01`:
-
-![conexión router](../images/sharding/sharding-connection.png)
 
 ```bash
 docker exec -it router-01 bash
@@ -126,8 +119,6 @@ db
 db.facturas.countDocuments()
 // 30870
 ```
-
-![Sharding sin configurar](../images/sharding/sharding-no-config.png)
 
 ## Definiendo la shard key -> por rango
 
